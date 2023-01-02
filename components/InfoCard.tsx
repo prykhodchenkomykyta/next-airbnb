@@ -4,7 +4,7 @@ import { HeartIcon } from '@heroicons/react/24/outline';
 import { StarIcon } from '@heroicons/react/24/solid';
 
 type Props = {
-	img?: string | StaticImport;
+	img?: HTMLImageElement;
 	location: string;
 	title: string;
 	description: string;
