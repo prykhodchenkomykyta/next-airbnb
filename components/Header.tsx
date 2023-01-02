@@ -21,7 +21,7 @@ const Header: FC<Props> = ({ placeholder }) => {
   const [searchInput, setSearchInput] = useState<string>('');
   const [startDate, setStartDate] = useState<Date>(new Date());
   const [endDate, setEndDate] = useState<Date>(new Date());
-  const [numOfGuests, setNumOfGuests] = useState<number>(1);
+  const [numOfGuests, setNumOfGuests] = useState<number | string>(1);
   const router = useRouter();
 
   const selectionRange = {
