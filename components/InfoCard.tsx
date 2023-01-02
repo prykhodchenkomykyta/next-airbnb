@@ -11,7 +11,7 @@ type Props = {
 	star: number;
 	price: number;
 	total: number;
-}
+};
 
 const InfoCard: FC<Props> = ({ img, location, title, description, star, price, total }) => {
 	return (
