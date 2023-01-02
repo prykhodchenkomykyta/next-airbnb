@@ -5,9 +5,10 @@ import getCenter from 'geolib/es/getCenter';
 type Props = {
 	long: number;
 	lat: number;
+	title: string;
 };
 
-const Map: FC<Props> = ({ searchResults }) => {
+const Map: FC = ({ searchResults }: Props) => {
 	const [selectedLocation, setSelectedLocation] = useState({});
 
 	const coordinates = searchResults?.map((result) => ({
