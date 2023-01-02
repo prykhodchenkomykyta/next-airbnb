@@ -3,7 +3,17 @@ import Image from 'next/image';
 import { HeartIcon } from '@heroicons/react/24/outline';
 import { StarIcon } from '@heroicons/react/24/solid';
 
-const InfoCard: FC = ({ img, location, title, description, star, price, total }) => {
+type Props = {
+	img?: string;
+	location: string;
+	title: string;
+	description: string;
+	star: number;
+	price: number;
+	total: number;
+}
+
+const InfoCard: FC<Props> = ({ img, location, title, description, star, price, total }) => {
 	return (
 		<div className='flex py-7 px-2 border-b cursor-pointer hover:opacity-80 
 		hover:shadow-lg transition duration-200 ease-out first:border-t'>
