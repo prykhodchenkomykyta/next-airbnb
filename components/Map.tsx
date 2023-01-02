@@ -27,6 +27,7 @@ const Map: FC = ({ searchResults }: Props) => {
 	});
 
 	return (
+		<>
 		<ReactMapGL
 			mapStyle='mapbox://styles/kultiapka/clbob8vhi000214sb9l64swm0'
 			mapboxApiAccessToken={process.env.mapbox_key}
@@ -66,6 +67,7 @@ const Map: FC = ({ searchResults }: Props) => {
 				</div>
 			))}
 		</ReactMapGL>
+		</>
 	);
 }
 
