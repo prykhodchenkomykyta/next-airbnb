@@ -14,8 +14,8 @@ const Map = ({ searchResults }: Props) => {
 	const [selectedLocation, setSelectedLocation] = useState({});
 
 	const coordinates = searchResults?.map((result) => ({
-		longitude: result.long?,
-		latitude: result.lat?,
+		longitude: result?.long?,
+		latitude: result?.lat?,
 	}));
 
 	const center = getCenter(coordinates);
