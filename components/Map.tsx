@@ -4,9 +4,9 @@ import getCenter from 'geolib/es/getCenter';
 
 type Props = {
 	searchResults: [
-		long: number;
-		lat: number;
-		title: string;
+		long: number,
+		lat: number,
+		title: string
 	];
 };
 
