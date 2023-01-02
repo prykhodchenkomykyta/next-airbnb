@@ -3,11 +3,11 @@ import ReactMapGL, {Marker, Popup} from 'react-map-gl';
 import getCenter from 'geolib/es/getCenter';
 
 interface Props {
-	searchResults: {
+	searchResults: [
 		long: number;
 		lat: number;
 		title: string;
-	};
+	];
 };
 
 const Map = ({ searchResults }: Props) => {
