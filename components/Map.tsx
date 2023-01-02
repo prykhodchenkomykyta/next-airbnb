@@ -3,7 +3,7 @@ import ReactMapGL, {Marker, Popup} from 'react-map-gl';
 import getCenter from 'geolib/es/getCenter';
 
 type Props = {
-	searchResults: [
+	searchResults?: [
 		long?: string | number,
 		lat?: string | number,
 		title?: string
