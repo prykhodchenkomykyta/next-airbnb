@@ -7,7 +7,18 @@ import { format } from 'date-fns';
 import InfoCard from '../components/InfoCard';
 import Map from '../components/Map';
 
-const Search: FC = ({ searchResults }) => {
+
+type Props = {
+	img?: string;
+	location: string;
+	title: string;
+	description: string;
+	star: number;
+	price: number;
+	total: number;
+}
+
+const Search: FC<Props> = ({ searchResults }) => {
 	const router = useRouter();
 
 	const { location, startDate, endDate, numOfGuests } = router.query;
