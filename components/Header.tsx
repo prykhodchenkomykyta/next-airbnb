@@ -15,7 +15,7 @@ import { useRouter } from 'next/dist/client/router';
 
 type Props = {
   placeholder: string;
-}
+};
 
 const Header: FC<Props> = ({ placeholder }) => {
   const [searchInput, setSearchInput] = useState<string>('');
