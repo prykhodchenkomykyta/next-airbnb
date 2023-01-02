@@ -2,7 +2,7 @@ import { FC, useState } from 'react';
 import ReactMapGL, {Marker, Popup} from 'react-map-gl';
 import getCenter from 'geolib/es/getCenter';
 
-type Props = {
+interface Props {
 	searchResults: {
 		long: number;
 		lat: number;
