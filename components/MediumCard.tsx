@@ -4,7 +4,7 @@ import Image from 'next/image';
 type Props = {
 	img: string;
 	title: string;
-}
+};
 
 const MediumCard: FC<Props> = ({ img, title }) => {
 	return (
