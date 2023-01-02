@@ -6,7 +6,7 @@ type Props = {
 	title: string;
 	description: string;
 	buttonText: string;
-}
+};
 
 const LargeCard: FC<Props> = ({ img, title, description, buttonText }) => {
 	return (
