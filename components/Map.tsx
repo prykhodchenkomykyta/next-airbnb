@@ -1,11 +1,12 @@
 import { FC, useState } from 'react';
 import ReactMapGL, {Marker, Popup} from 'react-map-gl';
 import getCenter from 'geolib/es/getCenter';
+import { GeolibInputCoordinates } from 'geolib';
 
 type Props = {
 	searchResults?: [
-		long?: any,
-		lat?: any,
+		long?: GeolibInputCoordinates[],
+		lat?: GeolibInputCoordinates[],
 		title?: string
 	];
 };
