@@ -3,8 +3,7 @@ import ReactMapGL, {Marker, Popup} from 'react-map-gl';
 import getCenter from 'geolib/es/getCenter';
 
 type Props = {
-	searchResults?: [
-	];
+	searchResults: {}
 };
 
 const Map:FC = ({ searchResults }:Props) => {
