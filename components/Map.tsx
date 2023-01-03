@@ -5,7 +5,8 @@ import * as Geolib from 'geolib';
 
 type Props = {
 	searchResults?: [
-
+		long?: number,
+		lat?: number,
 		title?: string
 	];
 };
@@ -36,7 +37,7 @@ const Map = ({ searchResults }: Props) => {
 			{...viewport}
 			onViewportChange={(nextViewport) => setViewport(nextViewport)}
 		>
-			{searchResults?.map((result) => (
+			{searchResults?.map((result):Props => (
 				<div key={result.long}>
 					<Marker
 						longitude={result.long}
