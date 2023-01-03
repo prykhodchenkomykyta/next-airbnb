@@ -5,8 +5,8 @@ import * as Geolib from 'geolib';
 
 type Props = {
 	searchResults?: [
-		long?: GeolibLongitudeInputValue,
-		lat?: GeolibLatitudeInputValue,
+		long?: number,
+		lat?: number,
 		title?: string
 	];
 };
