@@ -39,8 +39,8 @@ const Map = ({ searchResults }: Props) => {
 			{searchResults?.map((result) => (
 				<div key={result.long}>
 					<Marker
-						longitude={result.long?}
-						latitude={result.lat?}
+						longitude={result.long}
+						latitude={result.lat}
 						offsetLeft={-20}
 						offsetTop={-10}
 					>
@@ -54,12 +54,12 @@ const Map = ({ searchResults }: Props) => {
 						</p>
 					</Marker>
 
-					{selectedLocation.long === result.long? ? (
+					{selectedLocation.long === result.long ? (
 						<Popup
 							onClose={() => setSelectedLocation({})}
 							closeOnClick={false}
-							longitude={result.long?}
-							latitude={result.lat?}
+							longitude={result.long}
+							latitude={result.lat}
 						>
 							{result.title?}
 						</Popup>
