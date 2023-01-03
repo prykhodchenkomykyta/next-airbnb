@@ -1,7 +1,7 @@
 import { FC, useState } from 'react';
 import ReactMapGL, {Marker, Popup} from 'react-map-gl';
 import getCenter from 'geolib/es/getCenter';
-import { GeolibLongitudeInputValue, GeolibLatitudeInputValue } from 'geolib';
+import * as Geolib from 'geolib';
 
 type Props = {
 	searchResults?: [
