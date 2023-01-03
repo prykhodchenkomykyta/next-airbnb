@@ -2,14 +2,11 @@ import { FC, useState } from 'react';
 import ReactMapGL, {Marker, Popup} from 'react-map-gl';
 import getCenter from 'geolib/es/getCenter';
 
-type Props = {
-	searchResults: {}
-};
 
-function Map ({ searchResults }:Props) {
+const Map:FC = ({ searchResults }) => {
 	const [selectedLocation, setSelectedLocation] = useState({});
 
-	const coordinates = JSON.parse(JSON.stringify(searchResults)).map((result):number => ({
+	const coordinates = searchResults?.map((result) => ({
 		longitude: result.long,
 		latitude: result.lat,
 	}));
