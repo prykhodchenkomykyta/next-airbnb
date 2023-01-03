@@ -10,7 +10,7 @@ type Props = {
 	};
 };
 
-const Map: FC = ({ searchResults: {long, lat, title}}: Props) => {
+const Map: FC = ({ searchResults }: Props) => {
 	const [selectedLocation, setSelectedLocation] = useState({});
 
 	const coordinates = searchResults?.map((result) => ({
