@@ -6,7 +6,7 @@ type Props = {
 	searchResults: {}
 };
 
-const Map:FC = ({ searchResults }:Props) => {
+function Map:FC ({ searchResults }:Props) {
 	const [selectedLocation, setSelectedLocation] = useState({});
 
 	const coordinates = searchResults?.map((result) => ({
