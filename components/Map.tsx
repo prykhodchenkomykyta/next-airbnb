@@ -9,7 +9,7 @@ type Props = {
 function Map ({ searchResults }:Props) {
 	const [selectedLocation, setSelectedLocation] = useState({});
 
-	const coordinates = JSON.parse(JSON.stringify(searchResults)).map((result) => ({
+	const coordinates = JSON.parse(JSON.stringify(searchResults)).map((result):number => ({
 		longitude: result.long,
 		latitude: result.lat,
 	}));
