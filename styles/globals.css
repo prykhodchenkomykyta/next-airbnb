@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-	outline: none;
-}
-
 @layer base {
   @font-face {
     font-family: 'Montserrat';
