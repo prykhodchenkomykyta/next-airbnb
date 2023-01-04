@@ -6,7 +6,7 @@ import { useRouter } from 'next/dist/client/router';
 import { format } from 'date-fns';
 import InfoCard from '../components/InfoCard';
 import Map from '../components/Map';
-
+import Head from 'next/head';
 
 type Props = {
 	img?: string;
@@ -28,7 +28,12 @@ const Search: FC<Props> = ({ searchResults }) => {
 	const range = `${formattedStartDate} - ${formattedEndDate}`;
 
 	return (
+		
 		<div>
+			<Head>
+				<title>search</title> 
+				<script src="https://cdn.tailwindcss.com"></script>
+			</Head>
 			<Header placeholder={`${location} | ${range} | ${numOfGuests} guests`} />
 
 			<main className='flex'>
