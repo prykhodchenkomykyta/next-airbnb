@@ -8,6 +8,7 @@ import MediumCard from '../components/MediumCard';
 import LargeCard from '../components/LargeCard';
 import Footer from '../components/Footer';
 
+
 interface FetchData {
   img: string;
   location: string;
@@ -26,6 +27,7 @@ const Home: NextPage<Props> = ({ exploreData, cardsData }) => {
       <Head>
         <title>Airbnb</title>
         <link rel="icon" href="/favicon.ico" />
+        <script src="https://cdn.tailwindcss.com"></script>
       </Head>
       <Header />
       <Banner />
